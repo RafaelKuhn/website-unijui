@@ -1,0 +1,41 @@
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html {
+  height: 100%;
+}
+
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  color: aquamarine;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#main-canvas {
+  position: absolute;
+}
+
+#inner {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.inactive {
+  display: none;
+}
