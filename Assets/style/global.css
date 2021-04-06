@@ -17,3 +17,12 @@ div#wrapper {
   background-color: black;
   border: none;
 }
+
+h1.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  width: 50%;
+  margin: 0;
+  padding: 25px 50px;
+  font-size: 30px;
+}

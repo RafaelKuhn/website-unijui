@@ -1,25 +1,21 @@
-.textArea{
-  color: white;
+.textArea {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 70px;
 }
 
-.textArea h1{
-  width: 50%;
-  padding: 25px 50px;
-  font-size: 30px;
-}
 
-.textArea p{
+.textArea p {
+  color: white;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
   font-size: 16px;
 }
 
-.imageContainer{
+.imageContainer {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -27,7 +23,7 @@
   width: auto;  
 }
 
-.imageContainer img{
+.imageContainer img {
   border-radius: 50%;
 }
 
