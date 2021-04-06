@@ -1,26 +1,36 @@
-.navbar{
+.header{
+  display: block;
+  margin: auto;
+}
+
+.header .logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  float: left;
+}
+
+.header .navbar{
   list-style-type: none;
-  margin-right: 10%;
-  margin-left: 10%;
   padding: 0;
   overflow: hidden;
   background-color: #0046ad;
   color: white;
+  height: 100px;
 }
 
-li{
+.navbar li{
   float: left;
 }
 
-li a {
+.navbar li a {
   display: block;
-  padding: 14px 16px;
+  padding: 40px 16px;
   text-align: center;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-
-li a:hover:not(.selected){
+.navbar li a:hover:not(.selected){
   background-color: blue;
 }
