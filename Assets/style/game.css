@@ -1,4 +1,7 @@
 iframe#game-frame {
-  border: 10px solid red;
-  max-width: 90%;
+  width: 100%;
+  min-width: 512px;
+  height: 812px;
+  margin: auto;
+  border: none;
 }

@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/background-tilable.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+div.wrapper {
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-width: 720px;
+  background-color: black;
+  border: none;
+}
