@@ -47,7 +47,13 @@ for (const linkRef in listLinksJson) {
 const navbarDiv = document.createElement("div");
 navbarDiv.classList.add("navbar-div");
 
+// icon
+const iconRef = document.createElement("link");
+iconRef.rel = "icon";
+iconRef.href = "../Assets/images/icon.png";
+
 // appends
+document.head.prepend(iconRef);
 document.head.appendChild(headerCss);
 
 logoLink.appendChild(logo)
