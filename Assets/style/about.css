@@ -1,0 +1,41 @@
+.textArea{
+  color: white;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textArea h1{
+  width: 50%;
+  padding: 25px 50px;
+  font-size: 30px;
+}
+
+.textArea p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  font-size: 16px;
+}
+
+.imageContainer{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 13px;
+  width: auto;  
+}
+
+.imageContainer img{
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
