@@ -28,7 +28,8 @@
   padding: 40px 16px;
   text-align: center;
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .navbar li a:hover:not(.selected){
