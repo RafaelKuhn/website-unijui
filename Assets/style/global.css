@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
 }
 
-div.wrapper {
+div#wrapper {
   height: 100%;
   margin-left: 20%;
   margin-right: 20%;
