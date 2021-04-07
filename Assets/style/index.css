@@ -22,10 +22,14 @@
 
 
 .newGames{
-  color: white;
   border-style: solid;
   border-color: gray;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 95%;
 }
 
 .newGames h1{
@@ -44,14 +48,17 @@
 .gameRowContainer{
   border-style: solid;
   border-color: gray;
-  padding: 15px 15px;
+  border-width: 3px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .iconHolder{
   width: 100px;
   height: 130px;
   display: inline-block;
-  /* float: left; */
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .iconHolder h2{
@@ -62,4 +69,34 @@
   font-size: 15px;
   text-align: center;
   color: white;
+}
+
+.bestRated{
+  color: white;
+  border-style: solid;
+  border-color: gray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  float: left;
+  margin-left: 15px;
+}
+
+.bestRated h1{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.rateTable, .rateTable th, td{
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.rateTable th, td{
+  padding: 5px 10px;
+}
+
+.rateTable a{
+  color: white;
+  text-decoration: white;
 }
