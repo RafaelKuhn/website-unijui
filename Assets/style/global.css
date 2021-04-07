@@ -1,16 +1,18 @@
 html, body {
-  height: 100%;
+  overflow: auto;
   margin: 0;
+  overflow: auto;
 }
 
 body {
+  min-height: 100vh;
   background-image: url("../images/background-tilable.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
 }
 
 div#wrapper {
-  height: 100%;
+  min-height: 100vh;
   margin-left: 20%;
   margin-right: 20%;
   min-width: 720px;
