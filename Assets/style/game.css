@@ -1,9 +1,14 @@
-iframe#game-frame {
-  display:block;
-  width: 720px;
+div#game-container {
+  margin: 0 auto;
+  width: 700px;
   min-width: 512px;
-  height: 720px;
+  height: 700px;
   min-height: 512px;
+}
+
+iframe#game-frame {
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   border: none;
 }
