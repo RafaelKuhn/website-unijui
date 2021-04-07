@@ -1,0 +1,65 @@
+.textArea {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 70px;
+}
+
+.textArea p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  font-size: 16px;
+  text-indent: 15px;
+  text-align: justify;
+}
+
+.textArea a{
+  color: gray;
+  text-decoration: none;
+}
+
+
+.newGames{
+  color: white;
+  border-style: solid;
+  border-color: gray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newGames h1{
+  padding-left: 15px;
+  font-size: 25px;
+}
+
+.gameBar{
+  list-style-type: none;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.gameRowContainer{
+  border-style: solid;
+  border-color: gray;
+  padding: 15px 15px;
+}
+
+.iconHolder{
+  width: 100px;
+  height: 130px;
+  display: inline-block;
+  /* float: left; */
+}
+
+.iconHolder h2{
+  color: white;
+}
+
+.smallHeader{
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
