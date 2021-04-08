@@ -8,6 +8,8 @@
   <title>Contato</title>
   <link rel="stylesheet" href="../Assets/style/global.css">
   <link rel="stylesheet" href="../Assets/style/contact.css">
+  <script type="text/javascript" src="../Assets/js/contact.js"></script>
+
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <h1 class="title">Contato</h1>
     
     <div id="form-wrapper">
-      <form id="contact-form">
+      <form id="contact-form" action="">
         <div class="row">
           <div class="column">
             <div class="form-group">
@@ -47,12 +49,15 @@
             <textarea type="text" class="form-item" id="message"></textarea>
           </div>
         </div>
+
+        <div class="row">
+          <button type="button" onclick="submitMessage()">
+            Enviar
+          </button>
+        </div>
+
       </form>
     </div>
-
-
-
-
   </div>
 
   <script src="../Assets/js/header-maker.js"></script>
