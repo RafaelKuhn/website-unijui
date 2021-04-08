@@ -1,7 +1,70 @@
-section.games {
-  
+div.games {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
 }
 
-section.games table {
-  margin: 0 auto;
+div.each-game {
+  display: relative;
+  padding: 5px;
+  height: 120px;
+  margin-bottom: 10px;
+  border: 2px solid rgba(128, 128, 128, 1);
+  transform: scale(1);
+}
+div.each-game:hover {
+  border: 2px solid rgba(30, 100, 203, 1);
+  transform: scale(1.01);
+}
+
+img.game-preview {
+  display: block;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(200, 200, 200, 0.4);
+  width: 120px;
+  max-height: 120px;
+  height: auto;
+}
+
+h2.game-name, p.game-description { /* , p.game-authors  */
+  display: block;
+  float: left;
+  margin: 0;
+  margin-left: 20px;
+  width: 70%;
+}
+
+h2.game-name {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: rgba(220, 220, 220, 1);
+}
+
+p.game-description {
+  text-align: justify;
+  right: 20%;
+  font-size: 0.9em;
+  color: rgba(180, 180, 180, 1);
+}
+
+p.game-authors {
+  position: absolute;
+  float: right;
+  margin: 0;
+  bottom: 10px;
+  right: 10px;
+  color: grey;
+  font-size: 0.8em;
+}
+p.game-authors::before {
+  content: "feito por: ";
+}
+
+span.author {
+  font-weight: bold;
+}
+
+p.game-description::first-letter {
+  text-transform: capitalize;
 }
