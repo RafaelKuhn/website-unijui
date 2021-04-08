@@ -2,7 +2,6 @@
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 70px;
 }
 
@@ -16,16 +15,37 @@
 }
 
 .imageContainer {
+  padding: 0;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8em;
   width: auto;  
 }
 
 .imageContainer img {
   border-radius: 50%;
+  box-shadow: 0px 0px 8px white;
+  transition: transform .2s
 }
+.imageContainer img:hover {
+  transform: scale(1.05);
+}
+.imageContainer p {
+  text-transform: capitalize;
+  margin: 0px 20% 0 20%;
+}
+.imageContainer p.name {
+  margin-top: 10px;
+}
+.imageContainer p.job {
+  color: grey;
+}
+.imageContainer a {
+  display: contents;
+  text-decoration: none;
+}
+
+
 
 .row {
   display: flex;
@@ -33,5 +53,5 @@
 
 .column {
   flex: 50%;
-  padding: 5px;
+  
 }

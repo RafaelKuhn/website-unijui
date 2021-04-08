@@ -28,6 +28,7 @@ div.row button{
 }
 
 div.row button:hover{
+  cursor: pointer;
   background-color: deepskyblue;
 }
 
@@ -62,9 +63,6 @@ input.form-item, textarea.form-item {
   background: #fff;
 }
 
-input.form-item::before {
-  content: "aa";
-}
 
 textarea#message {
   min-height: 6rem;

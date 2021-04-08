@@ -1,7 +1,6 @@
 html, body {
   overflow: auto;
   margin: 0;
-  overflow: auto;
 }
 
 body {
@@ -17,6 +16,7 @@ div#wrapper {
   margin-right: 20%;
   min-width: 720px;
   background-color: black;
+  overflow: hidden;
   border: none;
 }
 
@@ -27,7 +27,14 @@ p, th, td, h1, h2, h3, h4 {
 
 h1.title {
   width: 50%;
-  margin: 0;
-  padding: 25px 50px;
-  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 85%;
+  font-size: 2em;
+}
+
+p.justified {
+  text-align: justify;
+  text-indent: 2em;
 }

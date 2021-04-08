@@ -70,8 +70,6 @@
   
   window.onload = function() {            
     init();
-
-    console.log(Math.tan(Math.PI / 2));
     
     // this creates "intervals" and executes them repeatedly every amount of ms
     setInterval(updateGradient, DELAY_PER_CALL);

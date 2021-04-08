@@ -2,7 +2,6 @@
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 70px;
 }
 
@@ -11,33 +10,29 @@
   margin-right: auto;
   width: 85%;
   font-size: 16px;
-  text-indent: 30px;
-  text-align: justify;
 }
 
-.textArea a{
+.textArea a {
   color: gray;
   text-decoration: none;
 }
 
 
-.newGames{
+.newGames {
   border-style: solid;
   border-color: gray;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  width: 95%;
+  width: 85%;
 }
 
-.newGames h1{
+.newGames h1 {
   padding-left: 15px;
   font-size: 25px;
 }
 
-.gameBar{
+.gameBar {
   list-style-type: none;
   margin-right: 10%;
   margin-left: 10%;
@@ -45,7 +40,7 @@
   overflow: hidden;
 }
 
-.gameRowContainer{
+.gameRowContainer {
   border-style: solid;
   border-color: gray;
   border-width: 3px;
@@ -53,7 +48,7 @@
   padding: 10px;
 }
 
-.iconHolder{
+.iconHolder {
   width: 100px;
   height: 130px;
   display: inline-block;
@@ -61,46 +56,45 @@
   margin-right: 5px;
 }
 
-.iconHolder h2{
+.iconHolder h2 {
   color: white;
 }
 
-.smallHeader{
+.smallHeader {
   font-size: 15px;
   text-align: center;
   color: white;
 }
 
-.bestRated{
+.bestRated {
   color: white;
   border-style: solid;
   border-color: gray;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   float: left;
-  margin-left: 15px;
+  margin-left: 7.5%;
 }
 
-.bestRated h1{
+.bestRated h1 {
   padding-left: 15px;
   padding-right: 15px;
   font-size: 25px;
 }
 
-.rateTable, .rateTable th, td{
+.rateTable, .rateTable th, td {
   border: 1px solid white;
   border-collapse: collapse;
   margin: auto;
 }
 
-.rateTable th, td{
+.rateTable th, td {
   padding: 5px 10px;
 }
 
-.rateTable a{
+.rateTable a {
   color: white;
   text-decoration: white;
 }
 
-a:hover{
-  color: blue;
+a:hover {
+  color: lightskyblue;
 }
