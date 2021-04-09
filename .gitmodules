@@ -1,0 +1,3 @@
+[submodule "Games/starclicker"]
+	path = Games/starclicker
+	url = https://github.com/RafaelKuhn/day-night-cycle
