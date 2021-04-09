@@ -20,7 +20,7 @@
 
 .newGames {
   border-style: solid;
-  border-color: gray;
+  border-color: white;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -42,9 +42,11 @@
 
 .gameRowContainer {
   border-style: solid;
-  border-color: gray;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
   border-width: 3px;
-  border-radius: 5px;
   padding: 10px;
 }
 
@@ -69,7 +71,7 @@
 .bestRated {
   color: white;
   border-style: solid;
-  border-color: gray;
+  border-color: white;
   float: left;
   margin-left: 7.5%;
 }
@@ -80,10 +82,24 @@
   font-size: 25px;
 }
 
-.rateTable, .rateTable th, td {
-  border: 1px solid white;
+.rateTable {
   border-collapse: collapse;
-  margin: auto;
+}
+.rateTable td, th {
+  border: 1px solid white;
+}
+
+.rateTable tr:first-child td {
+  border-top: 0;
+}
+.rateTable tr td:first-child, .rateTable tr th:first-child {
+  border-left: 0;
+}
+.rateTable tr:last-child td {
+  border-bottom: 0;
+}
+.rateTable tr td,th:last-child {
+  border-right: 0;
 }
 
 .rateTable th, td {
