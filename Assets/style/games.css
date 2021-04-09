@@ -27,12 +27,12 @@ img.game-preview {
   height: auto;
 }
 
-h2.game-name, p.game-description { /* , p.game-authors  */
+h2.game-name, p.game-description {
   display: block;
   float: left;
   margin: 0;
   margin-left: 20px;
-  width: 70%;
+  width: 75%;
 }
 
 h2.game-name {
@@ -43,8 +43,7 @@ h2.game-name {
 
 p.game-description {
   text-align: justify;
-  right: 20%;
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: rgba(180, 180, 180, 1);
 }
 
