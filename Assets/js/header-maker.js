@@ -1,8 +1,12 @@
 (function() { // iife
-const header = document.getElementById("header");
-if (!header) {
-  throw Error('here is no div with id "header" inside this file');
+const wrapper = document.getElementById("wrapper");
+if (!wrapper) {
+  throw Error('here is no div with id "wrapper" inside this file');
 }
+
+// header creation
+const header = document.createElement("div");
+header.id = "header";
 
 // navbar names and uris
 const listLinksJson = {
@@ -62,5 +66,7 @@ header.appendChild(logoDiv);
 
 navbarDiv.appendChild(navbarList);
 header.appendChild(navbarDiv);
+
+wrapper.prepend(header);
 
 })();

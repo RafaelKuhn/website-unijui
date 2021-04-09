@@ -43,10 +43,10 @@ ul.navbar li a {
   color: white;
 }
 
-ul.navbar li a:hover:not(.selected) {
+ul.navbar li a:hover, ul.navbar li a:focus {
+  border: none;
   background-color: blue;
 }
-
 
 div.logo-div img {
   max-height: 100px;
