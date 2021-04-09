@@ -20,9 +20,9 @@ div#game-description {
 
 .controlsTable {
   margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-right: auto; */
   text-align: center;
+  float: left;
 }
 
 .controlsTable, .controlsTable td, th {
@@ -32,4 +32,40 @@ div#game-description {
 
 .controlsTable th, td {
   padding: 10px 15px;
+}
+
+.rateContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 6% 5%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  /* border: 1px solid white; */
+  height: 35px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
+.rateContainer .starRating input {
+  display: none;
+}
+
+.starRating label {
+  font-size: 25px;
+  color: white;
+  float: right;
+  transition: all 0.3s ease;
+}
+
+.starRating input:not(:checked) ~ label:hover,
+.starRating input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+
+.starRating input:checked ~ label { 
+  color: #fd4;
 }
