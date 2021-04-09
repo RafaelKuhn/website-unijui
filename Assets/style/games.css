@@ -9,8 +9,9 @@ div.each-game {
   padding: 5px;
   height: 120px;
   margin-bottom: 10px;
-  border: 2px solid rgba(128, 128, 128, 1);
+  border: 2px solid white;
   transform: scale(1);
+  transition: transform .2s;
 }
 div.each-game:hover {
   border: 2px solid rgba(30, 100, 203, 1);
@@ -38,7 +39,7 @@ h2.game-name, p.game-description { /* , p.game-authors  */
 h2.game-name {
   text-transform: capitalize;
   font-size: 1.2em;
-  color: rgba(220, 220, 220, 1);
+  color: white;
 }
 
 p.game-description {

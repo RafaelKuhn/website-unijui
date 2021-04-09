@@ -13,7 +13,7 @@
 }
 
 .textArea a {
-  color: gray;
+  color: rgb(170, 170, 170);
   text-decoration: none;
 }
 
@@ -56,10 +56,16 @@
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
+  transition: transform .2s;
 }
 
-.iconHolder h2 {
+.iconHolder:hover {
+  transform: scale(1.06);
+}
+
+.iconHolder a {
   color: white;
+  text-decoration: none;
 }
 
 .smallHeader {
