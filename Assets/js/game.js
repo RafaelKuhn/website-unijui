@@ -1,1 +1,0 @@
-document.onload = function() { alert("game is here")}
