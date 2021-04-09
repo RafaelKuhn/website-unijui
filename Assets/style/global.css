@@ -5,9 +5,9 @@ html, body {
 
 body {
   min-height: 100vh;
-  /* background-image: url("../images/background-tilable.jpg"); */
   background-image: url("https://i.pinimg.com/originals/fd/8f/8d/fd8f8da060afe72035e078e5fe661452.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -16,7 +16,6 @@ div#wrapper {
   margin-left: 20%;
   margin-right: 20%;
   min-width: 720px;
-  /* background-color: black; */
   overflow: hidden;
   background-color: rgb(22, 10, 82);
   border: none;
