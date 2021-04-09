@@ -17,3 +17,18 @@ div#game-description {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.controlsTable {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.controlsTable, .controlsTable td, th {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+.controlsTable th, td {
+  padding: 10px 15px;
+}
