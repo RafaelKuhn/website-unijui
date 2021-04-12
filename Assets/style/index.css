@@ -25,6 +25,7 @@
   margin-right: auto;
   margin-bottom: 50px;
   width: 85%;
+  height: 260px;
 }
 
 .newGames h1 {
@@ -47,16 +48,28 @@
   border-right: none;
   border-bottom: none;
   border-width: 3px;
-  padding: 10px;
+  padding: 20px 10px;
+  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .iconHolder {
-  width: 100px;
+  width: 120px;
   height: 130px;
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
+  justify-content: center;
+  align-items: center;
   transition: transform .2s;
+}
+
+.iconHolder img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .iconHolder:hover {
@@ -86,6 +99,7 @@
   padding-left: 15px;
   padding-right: 15px;
   font-size: 25px;
+  text-align: center;
 }
 
 .rateTable {
@@ -93,6 +107,7 @@
 }
 .rateTable td, th {
   border: 1px solid white;
+  text-align: center;
 }
 
 .rateTable tr:first-child td {
