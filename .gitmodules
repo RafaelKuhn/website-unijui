@@ -5,4 +5,4 @@
 	branch = main
 [submodule "Games/sphere-shooter"]
 	path = Games/sphere-shooter
-	url = https://github.com/Fufumiga/sphere-shooter
+	url = https://github.com/Fufumiga/sphere-shooter.git
