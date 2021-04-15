@@ -3,3 +3,6 @@
 	path = games/star-clicker
 	url = https://github.com/RafaelKuhn/star-clicker.git
 	branch = main
+[submodule "Games/sphere-shooter"]
+	path = games/sphere-shooter
+	url = https://github.com/Fufumiga/sphere-shooter.git
