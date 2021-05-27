@@ -14,6 +14,8 @@
 <body>
   <div id="wrapper">
 
+    <?php include '../Assets/html/header.php' ?>
+
     <h1 class="title">Contato</h1>
     
     <div id="form-wrapper">
@@ -58,7 +60,6 @@
   </div>
 
   <script type="application/javascript" src="../Assets/js/contact.js"></script>
-  <script src="../Assets/js/header-maker.js"></script>
 </body>
 
 </html>

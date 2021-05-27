@@ -13,6 +13,8 @@
 <body>
   <div id="wrapper">
 
+    <?php include '../Assets/html/header.php'?>
+
     <h1 class="title">Games</h1>
 
     <div class="games">
@@ -37,11 +39,7 @@
       </a>
       
     </div>
-
-
   </div>
-
-  <script src="../Assets/js/header-maker.js"></script>
 </body>
 
 </html>
