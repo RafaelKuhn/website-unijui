@@ -19,7 +19,7 @@
 
     <div class="games">
       
-      <a href="game.html">
+      <a href="game.php">
         <div class="each-game">
           <img class="game-preview" src="../assets/images/game-previews/star-clicker.jpg" alt="star clicker preview image">
           <h2 class="game-name">Star clicker</h2>
@@ -29,7 +29,7 @@
         </div>
       </a>
       
-      <a href="game2.html">
+      <a href="game2.php">
         <div class="each-game">
           <img class="game-preview" src="../assets/images/game-previews/sphere-shooter.jpg" alt="star clicker preview image">
           <h2 class="game-name">Sphere Shooter</h2>
