@@ -1,3 +1,5 @@
+<?php include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +16,7 @@
 <body>
   <div id="wrapper">
     
-    <?php include '../Assets/html/header.php' ?>
+    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
 
     <h1 class="title">Star Clicker</h1>
 

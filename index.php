@@ -1,3 +1,5 @@
+<?php include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,14 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unijuí Games</title>
-  <link rel="stylesheet" href="../Assets/style/global.css">
-  <link rel="stylesheet" href="../Assets/style/index.css">
+  <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/Assets/style/global.css">
+  <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/Assets/style/index.css">
 </head>
 
 <body>
   <div id="wrapper">
 
-    <?php include '../Assets/html/header.php'?>
+    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
 
     <h1 class="title">Sobre o Site</h1>
 
@@ -25,7 +27,7 @@
       </p>
       <p class="justified">
         Para mais informações, entre em contato pela seção 
-        <a href="../Pages/contact.php">Contato</a>.
+        <a href="../Pages/contact.html">Contato</a>.
       </p>
     </div>
 
@@ -33,13 +35,13 @@
       <h1>Novos Jogos</h1>
       <div class="gameRowContainer">
         <div class="iconHolder">
-          <a href="game.php">
+          <a href="game.html">
             <img src="../Assets/images/game-previews/star-clicker.jpg" height="100" width="100">
             <h2 class="smallHeader">Star Clicker</h2>
           </a>
         </div>
         <div class="iconHolder">
-          <a href="game2.php">
+          <a href="game2.html">
             <img src="../Assets/images/game-previews/sphere-shooter.jpg" height="100" width="100">
             <h2 class="smallHeader">Sphere Shooter</h2>
           </a>
@@ -55,11 +57,11 @@
           <th>Avaliação</th>
         </tr>
         <tr>
-          <td><a href="game.php">Star Clicker</a></td>
+          <td><a href="game.html">Star Clicker</a></td>
           <td> 4.99/5.00</td>
         </tr>
         <tr>
-          <td><a href="game2.php">Sphere Shooter</a></td>
+          <td><a href="game2.html">Sphere Shooter</a></td>
           <td> 4.98/5.00</td>
         </tr>
       </table>

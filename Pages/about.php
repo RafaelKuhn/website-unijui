@@ -1,3 +1,5 @@
+<?php include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +15,7 @@
 <body>
   <div id="wrapper"> 
 
-    <?php include '../Assets/html/header.php' ?>
+    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
 
     <div class="textArea">
       <h1 class="title">Sobre Nós</h1>
