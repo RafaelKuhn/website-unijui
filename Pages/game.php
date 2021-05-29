@@ -14,6 +14,8 @@
 <body>
   <div id="wrapper">
     
+    <?php include '../Assets/html/header.php' ?>
+
     <h1 class="title">Star Clicker</h1>
 
     <div id="game-container">
@@ -58,7 +60,6 @@
     </div>
 
   <br/></div>
-  <script src="../assets/js/header-maker.js"></script>
 </body>
 
 </html>

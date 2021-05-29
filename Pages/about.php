@@ -13,6 +13,8 @@
 <body>
   <div id="wrapper"> 
 
+    <?php include '../Assets/html/header.php' ?>
+
     <div class="textArea">
       <h1 class="title">Sobre Nós</h1>
       <p class="justified">
@@ -44,8 +46,6 @@
     
 
   </div>
-
-  <script src="../Assets/js/header-maker.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,8 @@
 <body>
   <div id="wrapper">
 
+    <?php include '../Assets/html/header.php'?>
+
     <h1 class="title">Sobre o Site</h1>
 
     <div class="textArea">
@@ -65,7 +67,7 @@
     </div>
     
   </div>
-  <script src="../Assets/js/header-maker.js"></script>
+  <!-- <script src="../Assets/js/header-maker.js"></script> -->
 </body>
 
 </html>
