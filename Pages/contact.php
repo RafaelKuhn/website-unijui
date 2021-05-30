@@ -7,9 +7,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/global.css">
+  <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/contact.css">
+  <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
   <title>Contato</title>
-  <link rel="stylesheet" href="../Assets/style/global.css">
-  <link rel="stylesheet" href="../Assets/style/contact.css">
 
 </head>
 
