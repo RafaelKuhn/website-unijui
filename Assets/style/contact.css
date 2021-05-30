@@ -16,21 +16,6 @@ div.row:last-of-type {
   margin-bottom: 50px;
 }
 
-div.row button{
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  background-color: #0046ad;
-
-  color: white;
-  padding: 15px 32px;
-}
-
-div.row button:hover{
-  cursor: pointer;
-  background-color: blue;
-}
-
 div.column {
   width: 100%;
 }
@@ -73,6 +58,22 @@ div.form-group label {
   color:white;
 }
 
-label, button {
+div.row input#submitButton {
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: #0046ad;
+
+  color: white;
+  padding: 15px 32px;
+}
+
+div.row input#submitButton:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+
+label, input#submitButton {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

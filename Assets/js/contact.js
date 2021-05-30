@@ -1,4 +1,4 @@
-function submitMessage(){
+function validateForm(){ 
   var name = document.getElementById("name").value;
   var surname = document.getElementById("surname").value;
   var email = document.getElementById("email").value;
@@ -6,14 +6,12 @@ function submitMessage(){
 
   if(name == "" || surname == "" || email == "" || message == "") {
     alert("Nenhum dos campos pode estar vazio!");
-    return;
+    return false;
   }
   if(!email.includes('@')) {
     alert("Endereço de email inválido! \n (precisa conter '@')");
-    return;
+    return false;
   }
   
-  alert('Mensagem enviada com sucesso!');
-  document.getElementById("contact-form").reset();
-
+  return true;
 }

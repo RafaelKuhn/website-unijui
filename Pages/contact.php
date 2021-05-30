@@ -12,6 +12,8 @@
   <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
   <title>Contato</title>
 
+  <script type="application/javascript" src="<?php echo SERVER_ROOT_REQUEST ?>/assets/js/contact.js"></script>
+
 </head>
 
 <body>
@@ -22,18 +24,18 @@
     <h1 class="title">Contato</h1>
     
     <div id="form-wrapper">
-      <form id="contact-form" action="">
+      <form id="contact-form" action="" method="post" onsubmit="return validateForm()">
         <div class="row">
           <div class="column">
             <div class="form-group">
               <label for="name">Nome</label><br/>
-              <input type="text" maxlength="45" class="form-item" id="name">  
+              <input name="name" type="text" maxlength="45" class="form-item" id="name">  
             </div>
           </div>
           <div class="column">
             <div class="form-group">
               <label for="surname">Sobrenome</label><br/>
-              <input type="text" maxlength="45" class="form-item" id="surname">  
+              <input name="surname" type="text" maxlength="45" class="form-item" id="surname">  
             </div>
           </div>
         </div>
@@ -41,28 +43,40 @@
         <div class="row">
           <div class="form-group">
             <label for="email">Email</label><br/>
-            <input type="email" class="form-item" maxlength="60" id="email">  
+            <input name="email" type="email" class="form-item" maxlength="60" id="email">  
           </div>
         </div>
 
         <div class="row">
           <div class="form-group">
             <label for="message">Mensagem</label><br/>
-            <textarea type="text" class="form-item" maxlength="300" id="message"></textarea>
+            <textarea name="message" type="text" class="form-item" maxlength="300" id="message"></textarea>
           </div>
         </div>
 
         <div class="row">
-          <button type="button" onclick="submitMessage()">
-            Enviar
-          </button>
+          <input id="submitButton" type="submit" value="Enviar">
+          </input>
         </div>
 
       </form>
     </div>
-  </div>
+      
+    <?php
+        $email = $_POST["email"] ?? exit();
+        $name = $_POST["name"] ?? exit();
+        $surname = $_POST["surname"] ?? exit();
+        $message = $_POST["message"] ?? exit();
 
-  <script type="application/javascript" src="../Assets/js/contact.js"></script>
+        include SERVER_ROOT."/logic/dao/PlayerMessage.php";
+        $msg = new PlayerMessage($name, $surname, $email, $message);
+        $msg->send();
+    ?>
+
+
+
+
+  </div>
 </body>
 
 </html>
