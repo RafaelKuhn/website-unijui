@@ -27,13 +27,13 @@
           <div class="column">
             <div class="form-group">
               <label for="name">Nome</label><br/>
-              <input type="text" class="form-item" id="name">  
+              <input type="text" maxlength="45" class="form-item" id="name">  
             </div>
           </div>
           <div class="column">
             <div class="form-group">
               <label for="surname">Sobrenome</label><br/>
-              <input type="text" class="form-item" id="surname">  
+              <input type="text" maxlength="45" class="form-item" id="surname">  
             </div>
           </div>
         </div>
@@ -41,14 +41,14 @@
         <div class="row">
           <div class="form-group">
             <label for="email">Email</label><br/>
-            <input type="email" class="form-item" id="email">  
+            <input type="email" class="form-item" maxlength="60" id="email">  
           </div>
         </div>
 
         <div class="row">
           <div class="form-group">
             <label for="message">Mensagem</label><br/>
-            <textarea type="text" class="form-item" id="message"></textarea>
+            <textarea type="text" class="form-item" maxlength="300" id="message"></textarea>
           </div>
         </div>
 

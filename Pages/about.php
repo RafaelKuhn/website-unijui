@@ -19,8 +19,9 @@
 
     <?php include SERVER_ROOT.'/Assets/html/header.php'?>
 
+    <h1 class="title">Sobre Nós</h1>
+
     <div class="textArea">
-      <h1 class="title">Sobre Nós</h1>
       <p class="justified">
         Somos Rafael Kuhn e Rodrigo Sônego, acadêmicos do curso de Ciência da Computação da Unijuí.
         Esse site foi feito como parte de um trabalho para a disciplina de Programação para web.
