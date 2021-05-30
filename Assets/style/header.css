@@ -1,5 +1,6 @@
 #header {
   display: block;
+  background-color: #0046ad;
   margin: auto;
   height: 100px;
 }
@@ -14,45 +15,58 @@
 }
 
 div.navbar-div {
-  float: right;
-  width: 70%;
+  float: left;
+  left: 12.5rem;
 }
 
 div.logo-div {
-  background-color: #0046ad;
   display:block;
   overflow:hidden;
   float: left;
-  width: 30%; 
+  width: 12.5rem;
   float:left;      
   height: 100px;  
   position: relative;
 }
 
 ul.navbar li {
+  height: 100%;
   float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 ul.navbar li a {
   display: block;
-  padding: 39px 16px;
+  padding: 2rem 1rem;
   text-align: center;
   text-decoration: none;
   font-family: monospace;
-  font-size: 1.4em;
+  font-size: 1.1em;
   color: white;
+  
 }
 
-ul.navbar li a:hover, ul.navbar li a:focus {
-  border: none;
+
+
+ul.navbar li {
+  background-color: transparent;
+  transition: background-color 100ms linear;
+}
+
+ul.navbar li:hover,
+ul.navbar li:focus {
   background-color: blue;
+  transition: background-color 100ms linear;
 }
 
 div.logo-div img {
   max-height: 100px;
-  width: 160px;
+  width: 80%;
+  left: 10%;
   top: 15%;
-  left: 20%;
   position: absolute;
   transition: transform .2s;
 }

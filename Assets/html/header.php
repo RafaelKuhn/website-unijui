@@ -5,7 +5,7 @@
     <div class="navbar-div">
         <ul class="navbar">
             <li><a href="<?php echo SERVER_ROOT_REQUEST ?>/pages/games.php">Games</a></li>
-            <li><a href="<?php echo SERVER_ROOT_REQUEST ?>/pages/about.php">Quem somos</a></li>
+            <li><a href="<?php echo SERVER_ROOT_REQUEST ?>/pages/about.php">Quem<br>somos</a></li>
             <li><a href="<?php echo SERVER_ROOT_REQUEST ?>/pages/contact.php">Contato</a></li>
         </ul>
     </div>

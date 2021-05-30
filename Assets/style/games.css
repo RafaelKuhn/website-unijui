@@ -24,8 +24,7 @@ img.game-preview {
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(200, 200, 200, 0.4);
   width: 120px;
-  max-height: 120px;
-  height: auto;
+  height: 120px;
 }
 
 h2.game-name, p.game-description {
