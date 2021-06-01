@@ -2,15 +2,12 @@ div#form-wrapper {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 5%;
-  /* border: 2px solid red; /**/
 }
 
 div.row {
   display: flex;
   width: 100%;
   margin-bottom: 1rem;
-
-  /* border: 1px solid blue; /**/
 }
 div.row:last-of-type {
   margin-bottom: 50px;
@@ -76,4 +73,26 @@ div.row input#submitButton:hover {
 
 label, input#submitButton {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.message {
+  position: relative;
+  background-color:#7482ff;
+  padding: 1rem 1.5rem 2.5rem 1.5rem;
+}
+
+div.message p {
+  text-transform: capitalize;
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 1em;
+}
+
+div.message h3 {
+  text-transform: capitalize;
+  margin: 0;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
 }
