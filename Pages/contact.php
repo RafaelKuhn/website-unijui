@@ -32,12 +32,7 @@
               <input name="name" type="text" maxlength="45" class="form-item" id="name">  
             </div>
           </div>
-          <div class="column">
-            <div class="form-group">
-              <label for="surname">Sobrenome</label><br/>
-              <input name="surname" type="text" maxlength="45" class="form-item" id="surname">  
-            </div>
-          </div>
+          
         </div>
 
         <div class="row">
@@ -60,18 +55,34 @@
         </div>
 
       </form>
-    </div>
       
-    <?php
-        $email = $_POST["email"] ?? exit();
-        $name = $_POST["name"] ?? exit();
-        $surname = $_POST["surname"] ?? exit();
-        $message = $_POST["message"] ?? exit();
+      <div class="row"><h2>Mensagens:</h2> </div>
 
-        include SERVER_ROOT."/logic/dao/PlayerMessage.php";
-        $msg = new PlayerMessage($name, $surname, $email, $message);
-        $msg->send();
-    ?>
+      <?php include SERVER_ROOT."/logic/dao/PlayerMessages.php"; ?>
+      <?php include SERVER_ROOT."/logic/core/message/sendMessage.php"; ?>
+
+      <?php
+        $template = '<div class="row message">
+        <p>%s.</p>
+        <h3>%s</h3>
+        </div>';
+
+        $messager = new PlayerMessages();
+        $messages = $messager->load();
+
+        foreach($messages as $key=>$message) {
+            echo sprintf($template, $message["message"], $message["name"]);
+        }
+        
+      ?>
+
+    </div>
+
+    
+
+    
+
+    
 
 
 
