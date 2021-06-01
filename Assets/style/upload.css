@@ -1,0 +1,93 @@
+h1 {
+  text-align: center;
+}
+
+div#form-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  /* border: 2px solid red; /**/
+}
+
+div#form-wrapper label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+div.row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+div.row:last-of-type {
+  margin-bottom: 50px;
+}
+
+div.column {
+  width: 100%;
+}
+
+div.column + div.column {
+  margin-left: 15px;
+}
+
+div.form-group:only-child {
+  width: 100%;
+}
+
+input.form-item, textarea.form-item {
+  resize: none;
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  text-indent: 10px;
+  padding: 0px 0px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  box-shadow: 0;
+  background: #fff;
+}
+
+textarea#description {
+  resize: none;
+  height: 100px;
+  width: 280px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-indent: 5px;
+  font-size: 14px;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+select#category {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  height: 30px;
+}
+
+div.form-group input[type='file'] {
+  color: rgb(116, 116, 116);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* input[type="file"] {
+  display: none;
+}
+
+input[type="file"]:hover {
+  cursor: pointer;
+} */
