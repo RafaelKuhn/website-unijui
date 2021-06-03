@@ -39,11 +39,11 @@
                  method="POST">
                     <label for="email">Email:</label>
                     <br>
-                    <input type="text" name="email">
+                    <input type="text" name="email" id="registerEmail">
                     <br>
                     <label for="username">Nome de usuário:</label>
                     <br>
-                    <input type="text" name="username">
+                    <input type="text" name="username" id="username">
                     <br>
                     <label for="password">Senha:</label>
                     <br>
