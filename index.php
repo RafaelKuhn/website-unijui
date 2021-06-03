@@ -22,9 +22,8 @@
 
     <div class="textArea">
       <p class="justified">
-        Esse é um site feito para jogar e (futuramente) enviar novos jogos em html
-        feitos por estudantes da Unijuí. Novos jogos serão analisados e,
-        caso aprovados, disponibilizados para o público.
+        Esse é um site feito para jogar e enviar novos jogos em html
+        feitos por estudantes da Unijuí.
       </p>
       <p class="justified">
         Para mais informações, entre em contato pela seção 
@@ -70,7 +69,6 @@
     </div>
     
   </div>
-  <!-- <script src="../Assets/js/header-maker.js"></script> -->
 </body>
 
 </html>

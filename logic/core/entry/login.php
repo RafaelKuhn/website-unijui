@@ -6,15 +6,21 @@
     $password = $_POST["password"] ?? exit("bad request");
 
     $request = new LoginRequester();
-    $loginSucceeded = $request->login($email, $password);
+    $loginResult = $request->login($email, $password);
 
-    if($loginSucceeded == false) { 
+    if($loginResult == false) { 
         echo("<script>
         alert('Login ou senha inválidos'); 
         window.history.back();
         </script>");
     }
     
-    //save session and stuff
-    header(SERVER_ROOT."/index.php"); 
+    $user_data = $loginResult;
+    
+    session_start();
+    $_SESSION["id"] = $user_data["id"];
+    $_SESSION["username"] = $user_data["username"];
+  
+    $index_address = SERVER_ROOT_REQUEST."/index.php";
+    header("Location: {$index_address}"); 
 ?>
