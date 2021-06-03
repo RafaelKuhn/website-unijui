@@ -3,7 +3,7 @@
 include SERVER_ROOT . "/logic/dao/DatabaseConnector.php";
 
 class RegisterRequester extends DatabaseConnector {
-    public function register(string $email, string $username, string $password) {
+    public function register(string $email, string $username, string $password): array {
         $encrypted_passw = password_hash($password, PASSWORD_BCRYPT);
 
         $sql = "INSERT INTO users (email, nickname, `password`) 
@@ -12,10 +12,17 @@ class RegisterRequester extends DatabaseConnector {
 
         $statement = $con->prepare($sql);
         $statement->bind_param("sss", $email, $username, $encrypted_passw);
+
         $statement->execute();
 
-        $affected_rows = $con->affected_rows;
+        if($statement->errno == 1062){
+            throw new Exception(message: "Nome de usuário ou Email já cadastrados");
+        }
+        
+        $user_data = array();
+        $user_data["id"] = $statement->insert_id;
+        $user_data["username"] = $username;
 
-        echo $affected_rows == 1;
+        return $user_data;
     }
 }

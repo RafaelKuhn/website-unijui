@@ -16,6 +16,11 @@
     }
     
     $user_data = $loginResult;
-    //save session and stuff
-    header(SERVER_ROOT."/index.php"); 
+    
+    session_start();
+    $_SESSION["id"] = $user_data["id"];
+    $_SESSION["username"] = $user_data["username"];
+  
+    $index_address = SERVER_ROOT_REQUEST."/index.php";
+    header("Location: {$index_address}"); 
 ?>

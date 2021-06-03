@@ -1,4 +1,5 @@
 <?php
+
     include $_SERVER["DOCUMENT_ROOT"] . "/website-unijui/logic/constants.php";
     include SERVER_ROOT."/logic/dao/RegisterRequester.php";
 
@@ -7,16 +8,30 @@
     $password = $_POST["password"] ?? exit("bad request");
 
     $request = new RegisterRequester();
-    $registerSucceeded = $request->register($email,$username,$password);
+    $registerResult = array();
 
-    if($registerSucceeded) {
-        //criar session aqui
-
-        $menu_path = SERVER_ROOT_REQUEST;
-
-        echo("<script type='text/javascript'>
-        alert('Registro feito com sucesso'); 
-        window.location.href='{$menu_path}';
+    try {
+        $registerResult = $request->register($email,$username,$password);
+    } catch (Exception $ex) {
+        echo("<script>
+        alert(\"Erro: ".$ex->getMessage()."\"); 
+        window.history.back();
         </script>");
+
+        exit;
     }
+
+
+    session_start();
+    $_SESSION["id"] = $registerResult["id"];
+    $_SESSION["username"] = $registerResult["username"];
+
+
+    echo "id: ".$_SESSION["id"]." name: ".$_SESSION["username"];
+    $menu_path = SERVER_ROOT_REQUEST;
+
+    // echo("<script type='text/javascript'>
+    // alert('Registro feito com sucesso'); 
+    // window.location.href='{$menu_path}';
+    // </script>");
 ?>
