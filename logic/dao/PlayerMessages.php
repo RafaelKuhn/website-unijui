@@ -23,6 +23,10 @@ class PlayerMessages extends DatabaseConnector {
         $con = $this->getConection();
         $res = $con -> query ("SELECT player_messages.name, player_messages.email,
         player_messages.message FROM player_messages");
+        
+        if (!$res) {
+            return $messages;
+        }
 
         for ($i = 0; $i < $res->num_rows; $i++) {
             $assoc = $res->fetch_assoc();
