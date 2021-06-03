@@ -1,3 +1,10 @@
+a, .dropbtn span {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none; 
+}
+
 #header {
   display: block;
   background-color: #0046ad;
@@ -35,17 +42,13 @@ ul.navbar li {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 
 ul.navbar li a {
   display: block;
   padding: 2rem 1rem;
   text-align: center;
-  text-decoration: none;
-  font-family: monospace;
-  font-size: 1.1em;
-  color: white;
   
 }
 
@@ -57,7 +60,8 @@ ul.navbar li {
 }
 
 ul.navbar li:hover,
-ul.navbar li:focus {
+ul.navbar li:focus,
+div.user-area:hover {
   background-color: blue;
   transition: background-color 100ms linear;
 }
@@ -73,4 +77,89 @@ div.logo-div img {
 
 div.logo-div img:hover {
   transform: scale(1.05);
+}
+
+
+
+div.user-area {
+  float: right;
+  right: 0;
+  height:100%;
+  display: table;
+  
+  text-align: center;
+  vertical-align: middle;
+
+  /* border: 1px solid red; /**/
+}
+
+div.user-area a {
+  padding: 0 1rem 0 1rem;
+  display: table-cell;
+  vertical-align: middle;
+
+  position: relative;
+  display: inline-block;
+
+  margin: 0;
+}
+
+.dropbtn {
+  background-color: #005ae0;
+  height: 100%;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: blue;
+}
+
+
+.dropdown {
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; /**/
+  position: absolute;
+  background-color: #0046ad;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content h3 {
+  text-align: left;
+  margin: 0;
+}
+
+.dropdown-content h3 a::before {
+  content: "\00a0";
+}
+
+.dropdown-content h3 a {
+  padding: 15px 0 15px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.dropdown-content h3 a:hover {
+  background-color: blue
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+.dropbtn span {
+  font-size: 1rem;
 }
