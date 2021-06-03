@@ -3,8 +3,6 @@
     include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/dao/DatabaseConnector.php";
 
     class LoginRequester extends DatabaseConnector {
-        public function __construct() { }
-
         public function login($email, $password): UserData|false {
 
             $sql = "SELECT PK_user_id, nickname, `password` FROM users WHERE email LIKE ?";
