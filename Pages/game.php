@@ -23,7 +23,6 @@ $gamePath = FileParser::parseGamePath($author, $gameName);
 </head>
 
 <body>
-<?php echo $gamePath; ?>
   <div id="wrapper">
     
     <?php include SERVER_ROOT.'/Assets/html/header.php'?>
