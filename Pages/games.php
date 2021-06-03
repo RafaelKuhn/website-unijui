@@ -23,25 +23,25 @@
 
     <div class="games">
       
-      <a href="game.php">
+      <a href="game.php?author=Kafael Ruhn&game=Star Clicker">
         <div class="each-game">
-          <img class="game-preview" src="../assets/images/game-previews/star-clicker.jpg" alt="star clicker preview image">
+          <img class="game-preview" src="<?php echo SERVER_ROOT_REQUEST ?>/assets/images/game-previews/star-clicker.jpg" alt="star clicker preview image">
           <h2 class="game-name">Star clicker</h2>
           <p class="game-description">Você deve clicar em todas as estrelas antes do amanhecer! 
             Na noite seguinte as estrelas nascerão novamente, mas você terá que começar do zero!</p>
-          <p class="game-authors"><span class="author">Rafael Sônego</span> e <span class="author">Rudrigo Kuhn </span></p>
+          <p class="game-authors"><span class="author">work in progress</span></p>
         </div>
       </a>
-      
+<!--
       <a href="game2.php">
         <div class="each-game">
-          <img class="game-preview" src="../assets/images/game-previews/sphere-shooter.jpg" alt="star clicker preview image">
+          <img class="game-preview" src="<?php echo SERVER_ROOT_REQUEST ?>/assets/images/game-previews/sphere-shooter.jpg" alt="star clicker preview image">
           <h2 class="game-name">Sphere Shooter</h2>
           <p class="game-description">Você deve destruir as esferas antes que eles batam em você! Atinja a maior pontuação possível!</p>
           <p class="game-authors"><span class="author"> Kafael Ruhn</span> e <span class="author">Sodrigo Rônego </span></p>
         </div>
       </a>
-      
+-->
     </div>
   </div>
 </body>

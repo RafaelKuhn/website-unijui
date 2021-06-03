@@ -1,4 +1,11 @@
-<?php include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php"; ?>
+<?php
+include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php";
+include SERVER_ROOT."/logic/file-access/FileParser.php";
+
+$gameName = $_GET["game"] ?? null;
+$author = $_GET["author"] ?? null;
+$gamePath = FileParser::parseGamePath($author, $gameName);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,11 +18,12 @@
   <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/global.css">
   <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
   <script src="https://kit.fontawesome.com/11f362c939.js" crossorigin="anonymous"></script>
-  <title>Game</title>
+  <title>Game: <?php echo $gameName ?? 'Not Found!' ?></title>
 
 </head>
 
 <body>
+<?php echo $gamePath; ?>
   <div id="wrapper">
     
     <?php include SERVER_ROOT.'/Assets/html/header.php'?>
@@ -23,7 +31,7 @@
     <h1 class="title">Star Clicker</h1>
 
     <div id="game-container">
-      <iframe id="game-frame" src="../Games/star-clicker/index.html">seu navegador não suporta iframes, que pena :C</iframe>
+      <iframe id="game-frame" src="<?php echo SERVER_ROOT_REQUEST."$gamePath" ?>">seu navegador não suporta iframes, que pena :C</iframe>
     </div>
 
     <div id="game-description">
