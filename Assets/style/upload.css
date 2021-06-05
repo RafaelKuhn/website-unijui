@@ -90,3 +90,13 @@ label.input-label {
   width: 65%;
   margin: auto;
 }
+
+span#html-path {
+  text-align: center;
+  color: white;
+}
+
+button#upload-button {
+  display: flex;
+  margin: auto;
+}

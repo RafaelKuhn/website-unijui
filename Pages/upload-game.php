@@ -43,7 +43,7 @@
                     <div class="form-group">
                         <label for="thumb">Miniatura do Jogo:</label>
                         <br><br>
-                        <img src="../Assets/images/default-placeholder.png" width="100px" height="100px" id="thumb-preview">
+                        <img runat="server" src="../Assets/images/default-placeholder.png" width="150px" height="150px" id="thumb-preview">
                         <br>
                         <label for="thumb" class="input-label stylized-button">Selecione a Imagem</label>
                         <input type="file" accept="image/png, image/jpeg" name="thumb" id="thumb">
@@ -66,11 +66,18 @@
                         <br><br>
                         <label for="htmlfile" class="input-label stylized-button">Selecione o Arquivo</label>
                         <input type="file" accept=".html" name="htmlfile" id="htmlfile">
+                        <span id="html-path"></span>
                         <br>
                         <label for="htmlfile" class="small-text">(Deve ser um único html contendo o script e css)</label>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <button class="stylized-button" id="upload-button">Enviar</button>
+            </div>
         </div>
     </div>
+
+    <script src="<?php echo SERVER_ROOT_REQUEST . "/Assets/js/upload-game.js";?>"></script>
 </body>
