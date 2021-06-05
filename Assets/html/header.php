@@ -14,7 +14,7 @@
         session_start();
         $id = $_SESSION["id"] ?? null;
         $username = $_SESSION["username"] ?? null;
-$id=1;$username="Kafael Ruhn";
+
         if (is_null($id) || is_null($username)) {
             echo
             '<button class="dropbtn" onclick="location.href=\''.SERVER_ROOT_REQUEST.'/pages/user-entry.php\'">
