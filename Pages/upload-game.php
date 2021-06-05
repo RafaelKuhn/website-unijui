@@ -51,10 +51,7 @@
                         <label for="category">Categoria:</label>
                         <br>
                         <select id="category" name="category">
-                            <option value="shooter">Shooter</option>
-                            <option value="clicker">Clicker</option>
-                            <option value="platform">Plataforma</option>
-                            <option value="fighting">Luta</option>
+                            <?php include SERVER_ROOT. "/logic/core/upload/get-categories.php" ?>
                         </select>
                     </div>
                 </div>
