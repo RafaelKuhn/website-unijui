@@ -19,7 +19,6 @@ form {
 }
 
 form input {
-  align-self: center;
   display: flex;
   border-radius: 4px;
   text-align: justify;
@@ -33,6 +32,7 @@ form input {
 
 form label {
   color: whitesmoke;
+  display: inline-block;
   align-self: center;
 }
 
@@ -70,4 +70,10 @@ form button:hover {
 
 .register-fields h1 {
   text-align: center;
+}
+
+.center-fields {
+  display: block;
+  margin: auto;
+  width: fit-content;
 }
