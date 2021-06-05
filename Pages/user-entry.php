@@ -9,6 +9,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/Assets/style/global.css">
     <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/Assets/style/user-entry.css">
+    <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                         <br>
                         <input type="password" name="password" id="loginPassw">
                         <br>
-                        <button type="submit">Login</button>
+                        <button type="submit" class="stylized-button">Login</button>
                     </div>
                 </form>
             </div>
@@ -54,7 +55,7 @@
                         <br>
                         <input type="password" name="confirmPassw" id="confirmPassword">
                         <br>
-                        <button type="submit">Registrar</button>
+                        <button type="submit" class="stylized-button">Registrar</button>
                     </div>
                 </form>
             </div>

@@ -20,10 +20,6 @@ div.row {
   margin-bottom: 1rem;
 }
 
-div.row:last-of-type {
-  margin-bottom: 50px;
-}
-
 div.column {
   width: 100%;
 }
@@ -57,7 +53,7 @@ input.form-item, textarea.form-item {
 textarea#description {
   resize: none;
   height: 100px;
-  width: 280px;
+  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-indent: 5px;
   font-size: 14px;
@@ -84,10 +80,13 @@ div.form-group input[type='file'] {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* input[type="file"] {
+input[type="file"] {
   display: none;
 }
 
-input[type="file"]:hover {
-  cursor: pointer;
-} */
+label.input-label {
+  text-align: center;
+  display: block;
+  width: 65%;
+  margin: auto;
+}

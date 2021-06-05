@@ -9,6 +9,7 @@
     <title>Envie Seu Jogo</title>
     <link rel="stylesheet" href="../Assets/style/global.css">
     <link rel="stylesheet" href="../Assets/style/upload.css">
+    <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
 </head>
 
 <body>
@@ -21,9 +22,12 @@
         <div id="form-wrapper">
             <div class="row">
                 <div class="column">
-                    <div class="form-group">
-                        <label for="title">Título:</label><br>
-                        <input type="text" class="form-item" name="title" id="title">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="title">Título:</label><br>
+                            <input type="text" class="form-item" name="title" id="title">
+                        </div>
+
                     </div>
                     <br>
                     <div class="row">
@@ -41,6 +45,7 @@
                         <br><br>
                         <img src="../Assets/images/default-placeholder.png" width="100px" height="100px" id="thumb-preview">
                         <br>
+                        <label for="thumb" class="input-label stylized-button">Selecione a Imagem</label>
                         <input type="file" accept="image/png, image/jpeg" name="thumb" id="thumb">
                     </div>
                 </div>
@@ -59,6 +64,7 @@
                     <div class="form-group">
                         <label for="htmlfile">Arquivo HTML:</label>
                         <br><br>
+                        <label for="htmlfile" class="input-label stylized-button">Selecione o Arquivo</label>
                         <input type="file" accept=".html" name="htmlfile" id="htmlfile">
                         <br>
                         <label for="htmlfile" class="small-text">(Deve ser um único html contendo o script e css)</label>

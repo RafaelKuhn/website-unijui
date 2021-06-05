@@ -20,7 +20,6 @@ form {
 
 form input {
   display: flex;
-  border-radius: 4px;
   text-align: justify;
   text-indent: 5px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -41,17 +40,6 @@ form button {
   justify-content: center;
   text-align: center;
   margin: auto;
-
-  font-size: 15px;
-  border: 1px solid white;
-  color: white;
-  background: blue;
-  padding: 10px 26px;
-  border-radius: 4px;
-}
-
-form button:hover {
-  background-color: deepskyblue;
 }
 
 .login-fields {
