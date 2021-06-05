@@ -32,10 +32,15 @@ h1.title {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 85%;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 p.justified {
   text-align: justify;
   text-indent: 2em;
+  line-height: 2em;
+}
+
+span.greyish {
+  color: gray;
 }
