@@ -17,21 +17,45 @@
 <body>
   <div id="wrapper">
 
-    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
+    <?php include SERVER_ROOT.'/assets/html/header.php'; ?>
 
     <h1 class="title">Games</h1>
 
+    <?php
+        include SERVER_ROOT.'/logic/dao/GamesRequester.php';
+        $requester = new GamesRequester();
+        $games = $requester->queryGames();
+    ?>
+    
     <div class="games">
-      
-      <a href="game.php?author=Kafael Ruhn&game=Star Clicker">
-        <div class="each-game">
-          <img class="game-preview" src="<?php echo SERVER_ROOT_REQUEST ?>/assets/images/game-previews/star-clicker.jpg" alt="star clicker preview image">
-          <h2 class="game-name">Star clicker</h2>
-          <p class="game-description">Você deve clicar em todas as estrelas antes do amanhecer! 
-            Na noite seguinte as estrelas nascerão novamente, mas você terá que começar do zero!</p>
-          <p class="game-authors"><span class="author">work in progress</span></p>
-        </div>
-      </a>
+    
+    <?php
+
+        if (!$games) {
+            echo "<p>Ainda não temos nenhum game registrado!</p>";
+            return;
+        } else {
+            foreach ($games as $game) {
+                echo getEachGameHtml($game->author, $game->title, $game->description);
+            }
+        }
+
+        function getEachGameHtml($author, $title, $description): string {
+            require SERVER_ROOT.'/logic/file-access/FileParser.php';
+            
+            $path = SERVER_ROOT_REQUEST.FileParser::parseGamePath($author, $title);
+            
+            return "
+            <a href=\"game.php?author={$author}&game={$title}\">
+                <div class=\"each-game\">
+                    <img class=\"game-preview\" src=\"{$path}thumb.png\" alt=\"game preview image\">
+                    <h2 class=\"game-name\">{$title}</h2>
+                    <p class=\"game-description\">{$description}</p>
+                    <p class=\"game-authors\"><span class=\"author\">{$author}</span></p>
+                </div>
+            </a>";
+        }
+    ?>
 <!--
       <a href="game2.php">
         <div class="each-game">
