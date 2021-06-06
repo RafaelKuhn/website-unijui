@@ -13,6 +13,7 @@
         alert('Login ou senha inválidos'); 
         window.history.back();
         </script>");
+        return;
     }
     
     $user_data = $loginResult;

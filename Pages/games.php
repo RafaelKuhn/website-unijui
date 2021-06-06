@@ -30,6 +30,7 @@
     <div class="games">
     
     <?php
+        require SERVER_ROOT.'/logic/file-access/FileParser.php';
 
         if (!$games) {
             echo "<p>Ainda não temos nenhum game registrado!</p>";
@@ -41,7 +42,6 @@
         }
 
         function getEachGameHtml($author, $title, $description): string {
-            require SERVER_ROOT.'/logic/file-access/FileParser.php';
             
             $path = SERVER_ROOT_REQUEST.FileParser::parseGamePath($author, $title);
             

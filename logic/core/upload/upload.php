@@ -8,6 +8,8 @@
     $thumb = $_FILES["thumb"] ?? exit("bad request");
     $htmlFile = $_FILES["htmlfile"] ?? exit("bad request");
 
+    $description = nl2br($description);
+    
     session_start();
     $user_id = intval($_SESSION["id"]);
     $username = $_SESSION["username"];
@@ -22,16 +24,16 @@
         echo ("<script>alert('Erro: {$ex->getMessage()}');
         window.history.back();</script>");
     }
+
     $formatted_username = str_replace(" ","-",$username); 
 
     $title = str_replace(" ","-",$title);
 
-    createDirectories($username, $title);
+    createDirectories($formatted_username, $title);
 
     $htmlpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/index.html";
 
-    $thumb_ext = pathinfo($thumb['name'])['extension'];
-    $thumbpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/thumb.{$thumb_ext}";
+    $thumbpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/thumb.png";
 
     move_uploaded_file($htmlFile['tmp_name'], $htmlpath);
     move_uploaded_file($thumb['tmp_name'], $thumbpath);

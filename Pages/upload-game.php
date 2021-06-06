@@ -26,7 +26,8 @@
         <h1>Envie Seu Jogo</h1>
 
         <div id="form-wrapper">
-            <form method="POST" enctype="multipart/form-data" action="<?php echo SERVER_ROOT_REQUEST . "/logic/core/upload/upload-game.php";?>">
+            <form method="POST" enctype="multipart/form-data" action="<?php echo SERVER_ROOT_REQUEST . "/logic/core/upload/upload.php";?>"
+            id="upload-form">
                 <div class="row">
                     <div class="column">
                         <div class="row">
@@ -81,7 +82,7 @@
                 </div>
 
                 <div class="row">
-                    <button class="stylized-button" id="upload-button">Enviar</button>
+                    <button type="submit" class="stylized-button" id="upload-button">Enviar</button>
                 </div>
             </form>
         </div>
