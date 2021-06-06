@@ -1,5 +1,3 @@
-<?php include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php"; ?>
-
 <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/header.css">
 
 <div id="header">
