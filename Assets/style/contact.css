@@ -58,20 +58,9 @@ div.form-group label {
 div.row input#submitButton {
   margin-left: auto;
   margin-right: auto;
-  border: none;
-  background-color: #0046ad;
-
-  color: white;
-  padding: 15px 32px;
 }
 
-div.row input#submitButton:hover {
-  cursor: pointer;
-  background-color: blue;
-}
-
-
-label, input#submitButton {
+label {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

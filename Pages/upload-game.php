@@ -26,55 +26,66 @@
         <h1>Envie Seu Jogo</h1>
 
         <div id="form-wrapper">
-            <div class="row">
-                <div class="column">
-                    <div class="form-group">
-                        <label for="title">Título:</label><br>
-                        <input type="text" class="form-item" name="title" id="title">
+            <form method="POST" enctype="multipart/form-data" action="<?php echo SERVER_ROOT_REQUEST . "/logic/core/upload/upload-game.php";?>">
+                <div class="row">
+                    <div class="column">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="title">Título:</label><br>
+                                <input type="text" class="form-item" name="title" id="title">
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="description">Descrição:</label><br>
+                                <textarea name="description" id="description" maxlength="200"></textarea>
+                                <br>
+                                <label for="description" class="small-text">(Máximo de 200 caracteres)</label><br>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <div class="row">
+                    <div class="column">
                         <div class="form-group">
-                            <label for="description">Descrição:</label><br>
-                            <textarea name="description" id="description" maxlength="200"></textarea>
+                            <label for="thumb">Miniatura do Jogo:</label>
+                            <br><br>
+                            <img runat="server" src="../Assets/images/default-placeholder.png" width="150px" height="150px" id="thumb-preview">
                             <br>
-                            <label for="description" class="small-text">(Máximo de 200 caracteres)</label><br>
+                            <label for="thumb" class="input-label stylized-button">Selecione a Imagem</label>
+                            <input type="file" accept="image/png, image/jpeg" name="thumb" id="thumb">
                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="form-group">
-                        <label for="thumb">Miniatura do Jogo:</label>
-                        <br><br>
-                        <img src="../Assets/images/default-placeholder.png" width="100px" height="100px" id="thumb-preview">
-                        <br>
-                        <input type="file" accept="image/png, image/jpeg" name="thumb" id="thumb">
+                <div class="row">
+                    <div class="column">
+                        <div class="form-group">
+                            <label for="category">Categoria:</label>
+                            <br>
+                            <select id="category" name="category">
+                                <?php include SERVER_ROOT . "/logic/core/upload/get-categories.php" ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form-group">
+                            <label for="htmlfile">Arquivo HTML:</label>
+                            <br><br>
+                            <label for="htmlfile" class="input-label stylized-button">Selecione o Arquivo</label>
+                            <input type="file" accept=".html" name="htmlfile" id="htmlfile">
+                            <span id="html-path"></span>
+                            <br>
+                            <label for="htmlfile" class="small-text">(Deve ser um único html contendo o script e css)</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                <div class="form-group">
-                        <label for="category">Categoria:</label>
-                        <br>
-                        <select id="category" name="category">
-                            <option value="shooter">Shooter</option>
-                            <option value="clicker">Clicker</option>
-                            <option value="platform">Plataforma</option>
-                            <option value="fighting">Luta</option>
-                        </select>
-                    </div>
+
+                <div class="row">
+                    <button class="stylized-button" id="upload-button">Enviar</button>
                 </div>
-                <div class="column">
-                    <div class="form-group">
-                        <label for="htmlfile">Arquivo HTML:</label>
-                        <br><br>
-                        <input type="file" accept=".html" name="htmlfile" id="htmlfile">
-                        <br>
-                        <label for="htmlfile" class="small-text">(Deve ser um único html contendo o script e css)</label>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
+
+    <script src="<?php echo SERVER_ROOT_REQUEST . "/Assets/js/upload-game.js"; ?>"></script>
 </body>

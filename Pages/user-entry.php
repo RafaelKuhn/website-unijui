@@ -26,41 +26,43 @@
         <div class="line-in-middle">
             <div class="login-fields">
                 <h1>Login</h1>
-                <form id="login-form" action="<?php echo SERVER_ROOT_REQUEST ?>/logic/core/entry/login.php"
-                 method="POST">
-                    <label for="email">Email:</label>
-                    <br>
-                    <input type="text" name="email">
-                    <br>
-                    <label for="password">Senha:</label>
-                    <br>
-                    <input type="password" name="password" id="loginPassw">
-                    <br>
-                    <button type="submit">Login</button>
+                <form id="login-form" action="<?php echo SERVER_ROOT_REQUEST ?>/logic/core/entry/login.php" method="POST">
+                    <div class="center-fields">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="text" name="email">
+                        <br>
+                        <label for="password">Senha:</label>
+                        <br>
+                        <input type="password" name="password" id="loginPassw">
+                        <br>
+                        <button type="submit" class="stylized-button">Login</button>
+                    </div>
                 </form>
             </div>
-            
+
             <div class="register-fields">
                 <h1>Registre-se</h1>
-                <form id="register-form" action="<?php echo SERVER_ROOT_REQUEST ?>/logic/core/entry/register.php"
-                 method="POST">
-                    <label for="email">Email:</label>
-                    <br>
-                    <input type="text" name="email" id="registerEmail">
-                    <br>
-                    <label for="username">Nome de usuário:</label>
-                    <br>
-                    <input type="text" name="username" id="username">
-                    <br>
-                    <label for="password">Senha:</label>
-                    <br>
-                    <input type="password" name="password" id="registerPassword">
-                    <br>
-                    <label for="confirmPassw">Confime a Senha:</label>
-                    <br>
-                    <input type="password" name="confirmPassw" id="confirmPassword">
-                    <br>
-                    <button type="submit">Registrar</button>
+                <form id="register-form" action="<?php echo SERVER_ROOT_REQUEST ?>/logic/core/entry/register.php" method="POST">
+                    <div class="center-fields">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="text" name="email" id="registerEmail">
+                        <br>
+                        <label for="username">Nome de usuário:</label>
+                        <br>
+                        <input type="text" name="username" id="username">
+                        <br>
+                        <label for="password">Senha:</label>
+                        <br>
+                        <input type="password" name="password" id="registerPassword">
+                        <br>
+                        <label for="confirmPassw">Confime a Senha:</label>
+                        <br>
+                        <input type="password" name="confirmPassw" id="confirmPassword">
+                        <br>
+                        <button type="submit" class="stylized-button">Registrar</button>
+                    </div>
                 </form>
             </div>
         </div>

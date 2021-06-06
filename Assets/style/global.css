@@ -41,6 +41,19 @@ p.justified {
   line-height: 2em;
 }
 
+.stylized-button {
+  font-size: 15px;
+  border: 1px solid white;
+  color: white;
+  background: blue;
+  padding: 10px 26px;
+}
+
+.stylized-button:hover {
+  background-color: deepskyblue;
+  cursor: pointer;
+}
+
 span.greyish {
   color: gray;
 }

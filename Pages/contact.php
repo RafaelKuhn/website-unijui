@@ -51,7 +51,7 @@
         </div>
 
         <div class="row">
-          <input id="submitButton" type="submit" value="Enviar">
+          <input id="submitButton" type="submit" class="stylized-button" value="Enviar">
           </input>
         </div>
 
