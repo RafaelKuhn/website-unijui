@@ -9,6 +9,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/Assets/style/global.css">
     <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/Assets/style/user-entry.css">
+    <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
 </head>
 
 <body>

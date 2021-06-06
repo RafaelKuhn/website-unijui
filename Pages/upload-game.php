@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envie Seu Jogo</title>
-    <link rel="stylesheet" href="../Assets/style/global.css">
-    <link rel="stylesheet" href="../Assets/style/upload.css">
+    <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/global.css">
+    <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/upload.css">
+    <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
 </head>
 
 <body>

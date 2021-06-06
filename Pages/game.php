@@ -17,7 +17,6 @@ $gamePath = FileParser::parseGamePath($author, $gameName);
   <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/game.css">
   <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/global.css">
   <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
-  <script src="https://kit.fontawesome.com/11f362c939.js" crossorigin="anonymous"></script>
   <title>Game: <?php echo $gameName ?? 'Not Found!' ?></title>
 
 </head>
