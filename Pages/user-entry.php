@@ -16,6 +16,12 @@
     <div id="wrapper">
         
     <?php include PAGE_HEADER ?>
+
+    <?php
+        if (isset($_SESSION) && isset($_SESSION["id"]) && isset($_SESSION["username"])) {
+            header("Location: ".SERVER_ROOT_REQUEST);
+        }
+    ?>
         
         <div class="line-in-middle">
             <div class="login-fields">
