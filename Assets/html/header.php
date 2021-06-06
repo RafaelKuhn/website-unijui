@@ -30,12 +30,12 @@
             }
             ?>
             <div class="dropdown">
-                <button class="dropbtn" onclick="location.href='<?php echo SERVER_ROOT_REQUEST ?>'">
+                <button class="dropbtn">
                     <span>Usuário:<br/><?php echo $formatted_username ?></span>
                 </button>
                 <div class="dropdown-content">
                 <h3><a href="<?php echo SERVER_ROOT_REQUEST ?>/pages/upload-game.php">⚔️ Subir game</a>
-                <h3><a href="<?php echo SERVER_ROOT_REQUEST ?>/pages/user-entry.php">❌ Sair</a>
+                <h3><a href="<?php echo SERVER_ROOT_REQUEST ?>/logic/core/entry/end-session.php">❌ Sair</a>
                 </div>
             </div>
         <?php
