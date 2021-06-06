@@ -24,11 +24,12 @@
         echo ("<script>alert('Erro: {$ex->getMessage()}');
         window.history.back();</script>");
     }
+
     $formatted_username = str_replace(" ","-",$username); 
 
     $title = str_replace(" ","-",$title);
 
-    createDirectories($username, $title);
+    createDirectories($formatted_username, $title);
 
     $htmlpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/index.html";
 
