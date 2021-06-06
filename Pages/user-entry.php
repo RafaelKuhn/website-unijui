@@ -14,15 +14,9 @@
 
 <body>
     <div id="wrapper">
-<<<<<<< HEAD
-
-        <?php include SERVER_ROOT . '/Assets/html/header.php' ?>
-
-=======
         
     <?php include PAGE_HEADER ?>
         
->>>>>>> origin/lestat
         <div class="line-in-middle">
             <div class="login-fields">
                 <h1>Login</h1>
