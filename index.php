@@ -16,21 +16,22 @@
 <body>
   <div id="wrapper">
 
-    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
+  <?php include PAGE_HEADER ?>
 
     <h1 class="title">Sobre o Site</h1>
 
     <div class="textArea">
       <p class="justified">
-        Esse é um site feito para jogar e enviar novos jogos em html
+        Esse é um site feito para jogar e enviar jogos no formato de páginas html estáticas
         feitos por estudantes da Unijuí.
-      </p>
-      <p class="justified">
-        Para mais informações, entre em contato pela seção 
-        <a href="../Pages/contact.html">Contato</a>.
+        Se você consegue transformar uma página html estática em um game, é a sua hora de brilhar!
+        Registre-se e comece a subir seus games!
+        Para mais informações, entre em contato pela seção <span class="greyish">Contato</span>.
       </p>
     </div>
 
+    <p> work in progress! </p>
+<!--    
     <div class="newGames">
       <h1>Novos Jogos</h1>
       <div class="gameRowContainer">
@@ -67,7 +68,7 @@
       </table>
 
     </div>
-    
+-->
   </div>
 </body>
 

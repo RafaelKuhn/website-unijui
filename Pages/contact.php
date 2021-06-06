@@ -19,12 +19,13 @@
 <body>
   <div id="wrapper">
 
-    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
+  <?php include PAGE_HEADER ?>
 
     <h1 class="title">Contato</h1>
     
     <div id="form-wrapper">
-      <form id="contact-form" action="" method="post" onsubmit="return validateForm()">
+    <h2>Envie uma mensagem!</h2>
+      <form id="contact-form" action="<?php echo SERVER_ROOT_REQUEST ?>/logic/core/message/sendMessage.php" method="post" onsubmit="return validateForm()">
         <div class="row">
           <div class="column">
             <div class="form-group">
@@ -58,15 +59,14 @@
       
       <div class="row"><h2>Mensagens:</h2> </div>
 
-      <?php include SERVER_ROOT."/logic/dao/PlayerMessages.php"; ?>
-      <?php include SERVER_ROOT."/logic/core/message/sendMessage.php"; ?>
+      
 
       <?php
         $template = '<div class="row message">
         <p>%s.</p>
         <h3>%s</h3>
         </div>';
-
+        include SERVER_ROOT."/logic/dao/PlayerMessages.php";
         $messager = new PlayerMessages();
         $messages = $messager->load();
 

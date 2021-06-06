@@ -17,7 +17,7 @@
 <body>
   <div id="wrapper">
 
-    <?php include SERVER_ROOT.'/assets/html/header.php'; ?>
+  <?php include PAGE_HEADER ?>
 
     <h1 class="title">Games</h1>
 

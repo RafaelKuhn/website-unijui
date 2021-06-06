@@ -7,15 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envie Seu Jogo</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../Assets/style/global.css">
     <link rel="stylesheet" href="../Assets/style/upload.css">
     <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST . "/assets/images/icon.png" ?>">
+=======
+    <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/global.css">
+    <link rel="stylesheet" href="<?php echo SERVER_ROOT_REQUEST ?>/assets/style/upload.css">
+    <link rel="icon" href="<?php echo SERVER_ROOT_REQUEST."/assets/images/icon.png" ?>">
+>>>>>>> origin/lestat
 </head>
 
 <body>
     <div id="wrapper">
 
-        <?php include SERVER_ROOT . '/Assets/html/header.php' ?>
+    <?php include PAGE_HEADER ?>
 
         <h1>Envie Seu Jogo</h1>
 

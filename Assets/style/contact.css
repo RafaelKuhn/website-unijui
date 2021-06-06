@@ -79,7 +79,6 @@ div.message p {
 }
 
 div.message h3 {
-  text-transform: capitalize;
   margin: 0;
   position: absolute;
   right: 5%;
