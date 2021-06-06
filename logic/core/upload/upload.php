@@ -33,8 +33,7 @@
 
     $htmlpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/index.html";
 
-    $thumb_ext = pathinfo($thumb['name'])['extension'];
-    $thumbpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/thumb.{$thumb_ext}";
+    $thumbpath = SERVER_ROOT. "/games/{$formatted_username}/{$title}/thumb.png";
 
     move_uploaded_file($htmlFile['tmp_name'], $htmlpath);
     move_uploaded_file($thumb['tmp_name'], $thumbpath);
