@@ -14,7 +14,7 @@
 <body>
   <div id="wrapper">
     
-    <?php include '../Assets/html/header.php' ?>
+  <?php include PAGE_HEADER ?>
 
     <h1 class="title">Sphere Shooter</h1>
 

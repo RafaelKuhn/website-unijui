@@ -16,7 +16,7 @@
 <body>
   <div id="wrapper">
 
-    <?php include SERVER_ROOT.'/Assets/html/header.php'?>
+  <?php include PAGE_HEADER ?>
 
     <h1 class="title">Sobre o Site</h1>
 

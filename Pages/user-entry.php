@@ -14,7 +14,7 @@
 <body>
     <div id="wrapper">
         
-        <?php include SERVER_ROOT . '/Assets/html/header.php' ?>
+    <?php include PAGE_HEADER ?>
         
         <div class="line-in-middle">
             <div class="login-fields">
