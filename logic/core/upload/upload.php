@@ -8,6 +8,8 @@
     $thumb = $_FILES["thumb"] ?? exit("bad request");
     $htmlFile = $_FILES["htmlfile"] ?? exit("bad request");
 
+    $description = nl2br($description);
+    
     session_start();
     $user_id = intval($_SESSION["id"]);
     $username = $_SESSION["username"];
