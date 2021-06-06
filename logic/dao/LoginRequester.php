@@ -15,7 +15,8 @@
             $statement->execute();
 
             $result = $statement->get_result();
-            if(!$result) {
+            
+            if($result->num_rows != 1) {
                 return false;
             }
 
