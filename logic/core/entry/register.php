@@ -26,12 +26,10 @@
     $_SESSION["id"] = $registerResult["id"];
     $_SESSION["username"] = $registerResult["username"];
 
-
-    echo "id: ".$_SESSION["id"]." name: ".$_SESSION["username"];
     $menu_path = SERVER_ROOT_REQUEST;
 
-    // echo("<script type='text/javascript'>
-    // alert('Registro feito com sucesso'); 
-    // window.location.href='{$menu_path}';
-    // </script>");
+    echo("<script type='text/javascript'>
+    alert('Registro feito com sucesso'); 
+    window.location.href='{$menu_path}';
+    </script>");
 ?>
