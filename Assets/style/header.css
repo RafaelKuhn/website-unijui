@@ -86,6 +86,7 @@ div.user-area {
   right: 0;
   height:100%;
   display: table;
+  min-width: 130px;
   
   text-align: center;
   vertical-align: middle;
@@ -104,27 +105,29 @@ div.user-area a {
   margin: 0;
 }
 
-.dropbtn {
+div.dropdown {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+button.dropbtn {
   background-color: #005ae0;
   height: 100%;
+  width: 100%;
   color: white;
   padding: 16px;
   border: none;
   cursor: pointer;
 }
 
-.dropbtn:hover {
+button.dropbtn:hover {
   background-color: blue;
 }
 
 
-.dropdown {
-  height: 100%;
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
+div.dropdown-content {
   display: none; /**/
   position: absolute;
   background-color: #0046ad;
