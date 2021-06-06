@@ -1,4 +1,4 @@
-<?php include $_SERVER["DOCUMENT_ROOT"] . "/website-unijui/logic/constants.php"; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"]."/website-unijui/logic/constants.php"; ?>
 
 <!DOCTYPE html>
 
@@ -16,6 +16,12 @@
     <div id="wrapper">
 
     <?php include PAGE_HEADER ?>
+
+    <?php
+        if (!isset($_SESSION) || !isset($_SESSION["id"]) || !isset($_SESSION["username"])) {
+            header("Location: ".SERVER_ROOT_REQUEST);
+        }
+    ?>
 
         <h1>Envie Seu Jogo</h1>
 

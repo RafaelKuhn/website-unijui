@@ -21,6 +21,6 @@
     $_SESSION["id"] = $user_data["id"];
     $_SESSION["username"] = $user_data["username"];
   
-    $index_address = SERVER_ROOT_REQUEST."/index.php";
+    $index_address = SERVER_ROOT_REQUEST;
     header("Location: {$index_address}"); 
 ?>
