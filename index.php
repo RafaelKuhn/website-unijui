@@ -30,45 +30,11 @@
       </p>
     </div>
 
-    <p> work in progress! </p>
-<!--    
-    <div class="newGames">
-      <h1>Novos Jogos</h1>
-      <div class="gameRowContainer">
-        <div class="iconHolder">
-          <a href="game.html">
-            <img src="../Assets/images/game-previews/star-clicker.jpg" height="100" width="100">
-            <h2 class="smallHeader">Star Clicker</h2>
-          </a>
-        </div>
-        <div class="iconHolder">
-          <a href="game2.html">
-            <img src="../Assets/images/game-previews/sphere-shooter.jpg" height="100" width="100">
-            <h2 class="smallHeader">Sphere Shooter</h2>
-          </a>
-        </div>
-      </div>
+    <div class="img">
+        <img src="<?php echo SERVER_ROOT_REQUEST ?>/assets/images/como-subir-um-game.jpg"/>
     </div>
 
-    <div class="bestRated">
-      <h1>Mais Avaliados</h1> 
-      <table class="rateTable" id="rateTable">
-        <tr>
-          <th>Game</th>
-          <th>Avaliação</th>
-        </tr>
-        <tr>
-          <td><a href="game.html">Star Clicker</a></td>
-          <td> 4.99/5.00</td>
-        </tr>
-        <tr>
-          <td><a href="game2.html">Sphere Shooter</a></td>
-          <td> 4.98/5.00</td>
-        </tr>
-      </table>
 
-    </div>
--->
   </div>
 </body>
 
