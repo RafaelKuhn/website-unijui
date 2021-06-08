@@ -4,7 +4,14 @@ include SERVER_ROOT."/logic/file-access/FileParser.php";
 
 $gameName = $_GET["game"] ?? null;
 $author = $_GET["author"] ?? null;
-$gamePath = FileParser::parseGamePath($author, $gameName);
+if (isset($author) && isset($gameName)) {
+    $gamePath = FileParser::parseGamePath($author, $gameName);
+    
+    include SERVER_ROOT."/logic/dao/SpecificGameData.php";
+    $gameData = new SpecificGameData($gameName);
+    $gameData = $gameData->getData();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -33,43 +40,27 @@ $gamePath = FileParser::parseGamePath($author, $gameName);
     </div>
 
     <div id="game-description">
-      <h2>Como Jogar</h2>
-      <p class="justified">Você deve clicar em todas as estrelas antes do amanhecer! 
-        Na noite seguinte as estrelas nascerão novamente, mas você terá que começar do zero!
+      <h2>Descrição</h2>
+      <p class="justified">
+          <?php echo $gameData["description"] ?>
       </p>
-      
-      <table class="controlsTable">
-        <tr>
-          <th>Controle</th>
-          <th>Ação</th>
-        </tr>
-        <tr>
-          <td><i class="fas fa-mouse"></i></td>
-          <td>Clique para contabilizar a estrela</td>
-        </tr>
-      </table>
-
-      <div class="rateContainer">
-        <br><br><br>
-        <div class="starRating">
-          <input type="radio" name="rate" id="rate5">
-          <label for="rate5" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate4">
-          <label for="rate4" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate3">
-          <label for="rate3" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate2">
-          <label for="rate2" class="fas fa-star"></label>
-          <input type="radio" name="rate" id="rate1">
-          <label for="rate1" class="fas fa-star"></label>
-          <br>
-          <h3>Avalie o jogo!</h3>
-        </div>
-      </div>
-
     </div>
 
-  <br/></div>
+    <div id="game-description">
+        <h2>Data de envio</h2>
+        <p class="justified">
+          <?php echo $gameData["upload_date"] ?>
+        </p>
+    </div>
+
+    <div id="game-description">
+        <h2>Categoria(s)</h2>
+        <p class="justified">
+          <?php echo $gameData["category"] ?>
+        </p>
+    </div>
+      
+  </div>
 </body>
 
 </html>
