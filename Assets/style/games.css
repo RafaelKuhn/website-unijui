@@ -5,10 +5,9 @@ div.games {
 }
 
 div.each-game {
-  display: relative;
+  display: block;
   padding: 5px;
   height: 120px;
-  margin-bottom: 10px;
   border: 2px solid white;
   transform: scale(1);
   transition: transform .2s;
@@ -66,4 +65,14 @@ span.author {
 
 p.game-description::first-letter {
   text-transform: capitalize;
+}
+
+div.game-container {
+  margin-bottom: 10px;
+}
+
+button.edit-button {
+  float: right;
+  margin-left: 10px;
+  display: relative;
 }
