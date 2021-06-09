@@ -1,7 +1,7 @@
 const uploadForm = document.getElementById("upload-form");
 
 uploadForm.onsubmit = function() {
-  return verifyFields();
+  return verifyFields() && confirmEdit();
 }
 
 function verifyFields() {
@@ -14,4 +14,10 @@ function verifyFields() {
   }
 
   return true;
+}
+
+function confirmEdit() {
+  var confirmed = confirm("Tem certeza que deseja fazer essas alterações?");
+
+  return confirmed;
 }

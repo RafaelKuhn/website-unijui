@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="row">
-                    <button type="submit" class="stylized-button" id="upload-button">Editar</button>
+                    <button type="submit" class="stylized-button" id="edit-button">Editar</button>
                 </div>
             </form>
         </div>

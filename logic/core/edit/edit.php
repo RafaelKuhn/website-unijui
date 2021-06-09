@@ -48,5 +48,9 @@
 
         rename($user_path . "/{$old_title}", $user_path . "/{$new_title}");
     }
+
+    $menu = SERVER_ROOT_REQUEST;
+    echo ("<script>alert('Jogo editado com sucesso!');
+    window.location.href='{$menu}'</script>");
     
 ?>
