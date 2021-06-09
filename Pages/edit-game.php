@@ -31,7 +31,8 @@
 
         <div id="form-wrapper">
             <form method="POST" enctype="multipart/form-data" action="<?php echo SERVER_ROOT_REQUEST . "/logic/core/edit/edit.php"; ?>" id="upload-form">
-                <input type="hidden" value="<?php echo $id ?>">
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="hidden" name="oldTitle" value="<?php echo $title; ?>">
                 <div class="row">
                     <div class="column">
                         <div class="row">
@@ -87,11 +88,11 @@
                 </div>
 
                 <div class="row">
-                    <button type="submit" class="stylized-button" id="upload-button">Enviar</button>
+                    <button type="submit" class="stylized-button" id="upload-button">Editar</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="<?php echo SERVER_ROOT_REQUEST . "/Assets/js/upload-game.js"; ?>"></script>
+    <script src="<?php echo SERVER_ROOT_REQUEST . "/Assets/js/edit-game.js"; ?>"></script>
 </body>
