@@ -1,10 +1,14 @@
 const uploadForm = document.getElementById("upload-form");
 
 uploadForm.onsubmit = function() {
-  return verifyFields() && confirmEdit();
+  if(areFieldsValid()) {
+    return confirmEdit();
+  }
+
+  return false;
 }
 
-function verifyFields() {
+function areFieldsValid() {
   var title = document.getElementById("title").value;
   var description = document.getElementById("description").value;
 
