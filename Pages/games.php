@@ -46,47 +46,22 @@
         $author = $game->author;
         $title = $game->title;
         $description = $game->description;
-        $id = $game->id;
-
-        if (isset($_SESSION["username"])) {
-          $display_state = strcmp($author, $_SESSION["username"]) == 0 ? "" : "display: none;";
-        } else {
-          $display_state = "display: none;";
-        }
 
         $thumb_path = SERVER_ROOT_REQUEST . FileParser::parseGamePath($author, $title);
-        $edit_path = SERVER_ROOT_REQUEST . "/pages/edit-game.php";
+       
         return "
+        <a href=\"game.php?author={$author}&game={$title}\">
           <div class=\"game-container\">
             <div class=\"each-game\">
-              <a href=\"game.php?author={$author}&game={$title}\">
-                    <img class=\"game-preview\" src=\"{$thumb_path}thumb.png\" alt=\"game preview image\">
-                    <h2 class=\"game-name\">{$title}</h2>
-                    <p class=\"game-description\">{$description}</p>
-                    <p class=\"game-authors\"><span class=\"author\">{$author}</span></p>
-              </a>
-              <form action='{$edit_path}' method='POST'>
-                <input style=\"display: none;\" type=\"text\" name=\"id\" value=\"{$id}\">
-                <input style=\"display: none;\" type=\"text\" name=\"title\" value=\"{$title}\">
-                <input style=\"display: none;\" type=\"text\" name=\"description\" value=\"{$description}\">
-                <input style=\"display: none;\" type=\"text\" name=\"thumbpath\" value=\"{$thumb_path}thumb.png\">
-                <button style=\"{$display_state}\" class=\"stylized-button edit-button\">Editar</button>
-              </form>
+                <img class=\"game-preview\" src=\"{$thumb_path}thumb.png\" alt=\"game preview image\">
+                <h2 class=\"game-name\">{$title}</h2>
+                <p class=\"game-description\">{$description}</p>
+                <p class=\"game-authors\"><span class=\"author\">{$author}</span></p>
             </div>
-            </div>";
+          </div>
+        </a>";
       }
       ?>
-      <!--
-          
-        <a href="game2.php">
-          <div class="each-game">
-            <img class="game-preview" src="<?php echo SERVER_ROOT_REQUEST ?>/assets/images/game-previews/sphere-shooter.jpg" alt="star clicker preview image">
-            <h2 class="game-name">Sphere Shooter</h2>
-          <p class="game-description">Você deve destruir as esferas antes que eles batam em você! Atinja a maior pontuação possível!</p>
-          <p class="game-authors"><span class="author"> Kafael Ruhn</span> e <span class="author">Sodrigo Rônego </span></p>
-        </div>
-      </a>
--->
     </div>
   </div>
 </body>

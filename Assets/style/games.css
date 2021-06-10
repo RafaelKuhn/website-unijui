@@ -75,9 +75,4 @@ div.game-container {
   justify-content: center;
 }
 
-button.edit-button {
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
-  display: flex;
-}
+

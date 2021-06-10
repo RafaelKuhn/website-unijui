@@ -10,6 +10,7 @@ class SpecificGameData extends DatabaseConnector {
 
     public function getData() {
         $sql = "SELECT
+        games.PK_game_id AS 'id',
         games.description,
         games.upload_date,
         categories.name AS 'category'

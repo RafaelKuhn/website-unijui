@@ -33,3 +33,20 @@ div#game-description {
 .controlsTable th, td {
   padding: 10px 15px;
 }
+
+
+.user-manipulation {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 700px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+button.edit-button {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
