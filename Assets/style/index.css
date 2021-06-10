@@ -21,7 +21,7 @@ div.img {
   text-align: center;
 }
 
-img {
+.img img {
   margin: auto;
   max-width: 70%;
 }
