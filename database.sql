@@ -1,5 +1,5 @@
 -- database
-DROP DATABASE website_unijui;
+DROP DATABASE IF EXISTS website_unijui;
 CREATE DATABASE website_unijui;
 USE website_unijui;
 
